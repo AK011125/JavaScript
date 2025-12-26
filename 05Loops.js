@@ -10,3 +10,13 @@ for(let i = 0;i < 5; i++){
     console.log(sum);
 }
 console.log("Net sum = ",sum);
+let i =0;
+while(i<5){
+    console.log(i);
+    i++;
+}
+let j = 20;
+do{
+    console.log(j);
+    j--;
+}while(j>10);
