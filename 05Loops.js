@@ -20,3 +20,19 @@ do{
     console.log(j);
     j--;
 }while(j>10);
+
+//for-of loop
+let str = "HelloWorld";
+for(let i of str){
+    console.log("i =",i);
+
+}
+let str1 = "JavaScript";
+
+let size = 0;
+for (let j of str){
+    //iterator -> characters
+    console.log("j =",j);
+    size++;
+}
+console.log("string size =",size);
