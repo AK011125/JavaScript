@@ -36,3 +36,18 @@ for (let j of str){
     size++;
 }
 console.log("string size =",size);
+
+//for-in loop
+let student = {
+    name : "Amit kumar",
+    age : 20,
+    cgpa : 7.5,
+    ispass : true,
+};
+
+for(let i in student){
+    console.log(i);
+}
+for(let key in student){
+    console.log("key =",key,"value =",student[key]);
+}
