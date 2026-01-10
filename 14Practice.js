@@ -11,3 +11,21 @@ function vowelcount(x){
 }
 
 console.log("No of vowel are : ",vowelcount("Hualeilowasdia"));
+
+
+// using arrow function
+const countvowel = (x) =>{
+    let count = 0;
+    for (const i of x){
+        if (i == "a" ||
+            i == "e" ||
+            i == "i" ||
+            i == "o" ||
+            i == "u"
+        ){
+            count ++;
+        }
+    }
+    return count;
+}
+console.log("Total vowels : ",countvowel("kauyaadbvouyerkfhkjebdfkvjgewrubv"));
