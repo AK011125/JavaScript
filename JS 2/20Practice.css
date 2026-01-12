@@ -1,0 +1,11 @@
+h2{
+    background-color: aqua;
+    color: rgb(78, 78, 9);
+}
+.box{
+    background-color: wheat;
+    border: solid black 2px;
+    height: 100px;
+    width: 100px;
+    margin: 2px;
+}

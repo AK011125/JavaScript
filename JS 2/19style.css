@@ -2,3 +2,13 @@ h1{
     color: blue;
     background-color: bisque;
 }
+#heading{
+    font-size: larger;
+}
+.text{
+    color: brown;
+    background-color: red;
+}
+body{
+    background-color: aqua;
+}
