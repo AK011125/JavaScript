@@ -1,3 +1,12 @@
 button{
     background-color: bisque;
+    height: 30px;
+    width: 90px;
+}
+div{
+    height: 250px;
+    width: 100px;
+    background-color:blue;
+    color: white;
+    border: 2px solid black;
 }
