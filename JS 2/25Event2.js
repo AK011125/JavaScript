@@ -23,11 +23,13 @@ btn1.addEventListener("click", () =>{
     console.log("button was clicked 2");
 });
 
-btn1.addEventListener("click", () =>{
-    console.log("button was clicked 3");
-});
+const handler3 = () =>{
+    console.log("button was clicked 3")};
+
+btn1.addEventListener("click", handler3);
 
 btn1.addEventListener("click", () =>{
     console.log("button was clicked 4");
 });
 // to remove event listner
+btn1.removeEventListener("click",handler3) //this event listener is removed
