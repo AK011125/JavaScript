@@ -25,8 +25,12 @@ console.log(arr);
 // it is already present in prototype object that is in-built here
 
 const employee = {
-    calcTax () {
-        console.log("Tax rate is 10%");
+    calcTax1 () {
+        console.log("Tax rate is 20%");
+    },
+
+    calcTax2 : function(){   //Other way to define function in a object
+        console.log("Tax rate is 30%");
     },
 };
 console.log(employee);
@@ -34,3 +38,41 @@ console.log(employee);
 //calcTax: f calcTax()
 //[[Prototype]] : Object
 
+// How to set a prototype
+const Ajay = {
+    salary : 5000000,
+};
+
+Ajay.__proto__=employee;
+
+console.log(Ajay);
+//Now we can use employee function in Ajay also
+
+console.log(Ajay.calcTax1);
+//if object and prototype both have same method so objects method will b e used
+
+//class
+class ToyotaCar{
+    start(){
+        console.log("start");
+    }
+
+    stop(){
+        console.log("stop");
+    }
+
+    saveBrand(brand){
+        this.brandName = brand;
+    }
+}
+
+console.log(ToyotaCar);
+
+let Fortuner = new ToyotaCar();
+console.log(Fortuner.start);
+
+let Lexus = new ToyotaCar();
+console.log(Lexus);
+
+Fortuner.saveBrand("Fortuner");
+console.log(Fortuner);
