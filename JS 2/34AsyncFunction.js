@@ -51,7 +51,7 @@ p1.then((res)=>{
         //     });
         // });
 
-//Promise chain 
+//Promise chain {we can use this in exchange of callback hell}
 
 //getData(1)
 //  .then(res) =>{
@@ -61,5 +61,5 @@ p1.then((res)=>{
 //      return getData(3);
 //  })
 //  .then((res)=>{
-//      console.log(success);
+//      console.log(res);
 //  });
