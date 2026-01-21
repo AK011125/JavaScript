@@ -53,6 +53,15 @@ p1.then((res)=>{
 
 //Promise chain {we can use this in exchange of callback hell}
 
+// function getData(dataId, getNextData){
+//     setTimeout(()=>{
+//         console.log("Data ",dataId);
+//         if(getNextData){
+//             getNextData();
+//         }
+//     },2000);
+// }
+
 //getData(1)
 //  .then(res) =>{
 //      return getData(2);
